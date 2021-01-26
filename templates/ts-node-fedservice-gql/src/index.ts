@@ -29,14 +29,13 @@ const main = async () => {
     bodyParser.json(),
     cors({
       origin: process.env.CORS_ORIGIN,
-      credentials: true,
     })
   );
 
   const server = new ApolloServer({
     schema,
     tracing: false,
-    context: ({ req }) => ({ permissions: req.headers['permissions'] }),
+    context: ({ req }) => ({ permissions: (req.headers['permissions'] as string).split(',') }),
   });
 
   server.applyMiddleware({ app });
