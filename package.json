@@ -1,0 +1,30 @@
+{
+  "name": "template-cli",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc && shx rm -rf dist/templates && shx cp -r templates dist"
+  },
+  "bin": {
+    "template-cli": "./dist/index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "inquirer": "^7.3.3",
+    "shelljs": "^0.8.4",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.0.5",
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^14.14.22",
+    "@types/shelljs": "^0.8.8",
+    "@types/yargs": "^15.0.12",
+    "nodemon": "^2.0.7",
+    "shx": "^0.3.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "import", "node", "promise"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:prettier/recommended", "prettier"],
+  "env": {
+    "node": true
+  },
+  "settings": {
+    "node": {
+      "allowModules": ["aws-sdk"]
+    }
+  },
+  "rules": {
+    "quotes": ["warn", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
+    "prettier/prettier": "warn",
+    "no-process-exit": 0,
+    "no-unused-vars": [
+      2,
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-console": 0,
+    "promise/param-names": 2,
+    "promise/catch-or-return": 2,
+    "promise/no-native": 0,
+    "node/no-unpublished-require": [
+      "error",
+      {
+        "allowModules": ["request", "aws-sdk"]
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline"
+      }
+    ]
+  }
+}

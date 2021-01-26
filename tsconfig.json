@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "esnext"], // dont need window stuff
+    "moduleResolution": "node",
+    "module": "commonjs", // typescripts docs say 'You very likely want "CommonJS" for node projects.'
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "target": "es6" // can target es6 since no need to support IE
+  },
+  "exclude": ["node_modules", "dist", "templates"]
+}
