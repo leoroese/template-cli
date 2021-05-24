@@ -31,8 +31,8 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'error',
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
     'import/order': [
       'error',
       {
