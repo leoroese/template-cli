@@ -18,7 +18,8 @@
     "baseUrl": ".",                             /* Base directory to resolve non-absolute module names. */
     "paths": {                                   /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
         "@src/*": ["src/*"]
-    },                                 
+    },       
+    "sourceMap": true,	
     "esModuleInterop": true,                        /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
     /* Experimental Options */
     "experimentalDecorators": true,              /* Enables experimental support for ES7 decorators. */

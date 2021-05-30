@@ -32,6 +32,8 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-unresolved': 'error',
     'no-use-before-define': 'off',
+	'no-unused-vars': ['off', { args: 'all', argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': ['off', { args: 'all', argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-use-before-define': ['error'],
     'import/order': [
       'error',
