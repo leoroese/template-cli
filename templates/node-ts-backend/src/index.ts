@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+import dotenv from 'dotenv-safe';
 import { add } from './add/add';
 // load the environment variables from the .env file
 dotenv.config({
