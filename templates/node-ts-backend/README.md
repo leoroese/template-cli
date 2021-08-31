@@ -1,1 +1,2 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+# node-okta-auth-tutorial
+Okta Authentication Tutorial with Node.js
